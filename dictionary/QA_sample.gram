@@ -1,0 +1,5 @@
+#JSGF V1.0;
+grammar QA_sample;
+public <rule> = <command> | <noise>;
+<command> = are you happy | what food do you like | where do you live in | what are your name | what day is it today | what are you doing now | can you help me | do you like japanese | did you sleep last night | do you play video games | how is the weather today | can you play baseball | where were you born | do you have time now | what are you interested in | have you ever been to japan | how did you come here | do you desire to relish your life;
+<noise> = te | ki | li | he | no | wa | su | ta | la | se | to | ho | ku | a | n | h | ti | le | z | hi | v | mo | wu | yo | ya | ne | g | nu | w | ke | p | ma | na | wo | o | sa | t | ko | x | ra | hu | so | ni | tu | ha | mu | ro | lu | r | ka | k | re | q | f | l | ru | s | j | me | lo;
