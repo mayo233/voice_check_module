@@ -1,9 +1,6 @@
 import os
-from pocketsphinx import LiveSpeech, get_model_path
+from pocketsphinx import LiveSpeech
 from module import module_beep
-
-# pocketsphinx path
-model_path = get_model_path()
 
 # Define path
 file_path = os.path.abspath(__file__)
@@ -60,7 +57,6 @@ def setup_live_speech(TF, dict_path, jsgf_path, kws_threshold):
 
     global live_speech
     live_speech = LiveSpeech(lm=TF,
-                             hmm=os.path.join(model_path, 'en-us'),
                              dic=dict_path,
                              jsgf=jsgf_path,
                              kws_threshold=kws_threshold)

@@ -1,10 +1,8 @@
 import os
-from pocketsphinx import LiveSpeech, get_model_path
+from pocketsphinx import LiveSpeech
 from module import module_pico
 from module import module_beep
 
-# pocketsphinx path
-model_path = get_model_path()
 qa_dict = {}
 with open('dictionary/QandA/QandA.txt', 'r') as f:
     qa_list = f.readlines()
@@ -77,10 +75,10 @@ def setup_live_speech(TF, dict_path, jsgf_path, kws_threshold):
 
     global live_speech
     live_speech = LiveSpeech(lm=TF,
-                             hmm=os.path.join(model_path, 'en-us'),
                              dic=dict_path,
                              jsgf=jsgf_path,
-                             kws_threshold=kws_threshold)
+                             kws_threshold=kws_threshold
+                             )
 
 def read_noise_word(gram_path):
 
