@@ -1,5 +1,0 @@
-#JSGF V1.0;
-grammar test;
-public <rule> = <command> | <noise>;
-<command> = do you like apple | i want to play tennis | please tell me the way to the kyoto station | let me know what i can do for you;
-<noise> = t | sa | ki | to | lu | s | wa | ru | ti | n | hi | a | g | he | le | te | ya | nu | x | me | l | ke | hu | ma | k | su | li | v | na | se | mu | ro | r | mo | f | ha | p | ni | q | ka | h | no | re | ra | j | w | wo | la | ho | lo | so | ne | tu | ku | z | ta | o | wu | ko | yo;
